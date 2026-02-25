@@ -110,7 +110,7 @@ function App() {
         </ol>
 
         <button onClick={toggleTheme}>
-          Alterar para o Tema {theme === 'light' ? 'dark' : 'escuro'}
+          Alterar para o Tema {theme === 'light' ? 'dark' : 'light'}
         </button>
       </div>
     </div>
