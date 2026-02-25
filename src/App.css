@@ -1,0 +1,155 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+/* APP */
+.App {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+/* THEMES */
+.App.light {
+  background-color: #f4f6f8;
+}
+
+.App.dark {
+  background-color: #121212;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 560px;
+  padding: 40px;
+  border-radius: 16px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container.light {
+  background-color: #ffffff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.container.dark {
+  background-color: #1e1e1e;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* TITLE */
+.container h1 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 28px;
+  color: inherit;
+}
+
+/* INPUT AREA */
+.input-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.container.dark .input-container input {
+  background-color: #2a2a2a;
+  color: #fff;
+  border-color: #444;
+}
+
+/* ADD BUTTON */
+.input-container button {
+  background-color: #2e7d32;
+  color: #fff;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: #1b5e20;
+}
+
+/* LIST */
+ol {
+  list-style: none;
+  margin-top: 10px;
+}
+
+/* LIST ITEM */
+ol li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container.dark ol li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* TEXT */
+ol li span {
+  font-size: 16px;
+}
+
+/* REMOVE BUTTON */
+ol li button {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ol li button:hover {
+  background-color: #b71c1c;
+}
+
+/* THEME TOGGLE */
+.container > button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px;
+  background-color: transparent;
+  border: 2px solid currentColor;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* Texto no tema escuro */
+.container.dark {
+  color: #ffffff;
+}
+
+.feedback {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+
